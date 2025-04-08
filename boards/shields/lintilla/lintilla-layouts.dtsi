@@ -1,0 +1,55 @@
+#include <physical_layouts.dtsi>
+
+/ {
+    default_layout: default_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        transform = <&default_transform>;
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100   63   10  (-250)   113    60>
+            , <&key_physical_attrs 100 100 1545   10     250  1595    60>
+            , <&key_physical_attrs 100 100    0  232 (-1250)    50   282>
+            , <&key_physical_attrs 100 100   86  158 (-1250)   136   208>
+            , <&key_physical_attrs 100 100  186   66  (-750)   236   116>
+            , <&key_physical_attrs 100 100  299    0  (-250)   349    50>
+            , <&key_physical_attrs 100 100  406   47       0     0     0>
+            , <&key_physical_attrs 100 100  506   64       0     0     0>
+            , <&key_physical_attrs 100 100 1102   64       0     0     0>
+            , <&key_physical_attrs 100 100 1202   47       0     0     0>
+            , <&key_physical_attrs 100 100 1309    0     250  1359    50>
+            , <&key_physical_attrs 100 100 1422   66     750  1472   116>
+            , <&key_physical_attrs 100 100 1522  158    1250  1572   208>
+            , <&key_physical_attrs 100 100 1608  232    1250  1658   282>
+            , <&key_physical_attrs 100 100   21  330 (-1250)    71   380>
+            , <&key_physical_attrs 100 100  107  255 (-1250)   157   305>
+            , <&key_physical_attrs 100 100  199  165  (-750)   249   215>
+            , <&key_physical_attrs 100 100  302  100  (-250)   352   150>
+            , <&key_physical_attrs 100 100  406  147       0     0     0>
+            , <&key_physical_attrs 100 100  506  164       0     0     0>
+            , <&key_physical_attrs 100 100 1102  164       0     0     0>
+            , <&key_physical_attrs 100 100 1202  147       0     0     0>
+            , <&key_physical_attrs 100 100 1306  100     250  1356   150>
+            , <&key_physical_attrs 100 100 1409  165     750  1459   215>
+            , <&key_physical_attrs 100 100 1501  255    1250  1551   305>
+            , <&key_physical_attrs 100 100 1587  330    1250  1637   380>
+            , <&key_physical_attrs 100 100  128  353 (-1250)   178   403>
+            , <&key_physical_attrs 100 100  212  264  (-750)   262   314>
+            , <&key_physical_attrs 100 100  306  200  (-250)   356   250>
+            , <&key_physical_attrs 100 100  406  247       0     0     0>
+            , <&key_physical_attrs 100 100  506  264       0     0     0>
+            , <&key_physical_attrs 100 100 1102  264       0     0     0>
+            , <&key_physical_attrs 100 100 1202  247       0     0     0>
+            , <&key_physical_attrs 100 100 1302  200     250  1352   250>
+            , <&key_physical_attrs 100 100 1396  264     750  1446   314>
+            , <&key_physical_attrs 100 100 1480  353    1250  1530   403>
+            , <&key_physical_attrs 100 100  517  370    1500   567   420>
+            , <&key_physical_attrs 100 100  620  413    3000   670   463>
+            , <&key_physical_attrs 100 100  708  482 (-4500)   758   532>
+            , <&key_physical_attrs 100 100  900  482    4500   950   532>
+            , <&key_physical_attrs 100 100  988  413 (-3000)  1038   463>
+            , <&key_physical_attrs 100 100 1091  370 (-1500)  1141   420>
+            ;
+    };
+};
+
+// vim: expandtab softtabstop=4 shiftwidth=4
