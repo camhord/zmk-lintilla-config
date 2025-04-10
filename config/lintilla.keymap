@@ -96,8 +96,8 @@
 //         ┃   Z   ┃   X   ┃   C   ┃   V   ┃   B   ┃                          ┃   N   ┃   M   ┃  , <  ┃  . >  ┃  / ?  ┃
              &kp Z   &kp X   &kp C   &kp V   &kp B                              &kp N   &kp M &kp COMMA &kp DOT &kp FSLH
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
-//                                     ┃ ( num ┃RETURN ┃ [ FN  ┃  ┃ ] SYM ┃ SPACE ┃ ) nav ┃
-                             &lt 1 LPAR &hm LCTL RET &lt 3 LBKT   &lt 4 RBKT &kp SPC &lt 2 RPAR
+//                                     ┃  num  ┃ SHIFT ┃   FN  ┃  ┃RET SYM┃ SPACE ┃  nav  ┃
+                                         &mo 1 &kp LSHFT &mo 3     &lt 4 RET &kp SPC &mo 2
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
@@ -149,7 +149,7 @@
         &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none                         &kp PG_DN &none  &kp DOWN &none   &none
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
 //                                     ┃       ┃       ┃       ┃  ┃       ┃       ┃ ##### ┃
-                                        &kp SPC &kp RET  &none      &none   &none   &trans
+                                         &none  &kp SPC &kp RET     &none   &none   &trans
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
@@ -189,11 +189,11 @@
 //         ┃       ┃                                                                                          ┃       ┃
              &none                                                                                              &none
 // ┏━━━━━━━╋━━━━━━━╋━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓                          ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━╋━━━━━━━╋━━━━━━━┓
-// ┃   `   ┃   *   ┃   #   ┃   +   ┃   %   ┃   _   ┃                          ┃       ┃ CtrlU ┃ CtrlI ┃       ┃       ┃       ┃
-&kp GRAVE &kp STAR &kp HASH &kp PLUS &kp PRCNT &kp UNDER                        &none &kp LC(U) &kp LC(I) &none &none   &none
+// ┃   ~   ┃   *   ┃   #   ┃   +   ┃   %   ┃   _   ┃                          ┃       ┃ CtrlU ┃ CtrlI ┃       ┃       ┃       ┃
+&kp TILDE &kp STAR &kp HASH &kp PLUS &kp PRCNT &kp UNDER                        &none &kp LC(U) &kp LC(I) &none &none   &none
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
-// ┃   ~   ┃   ^   ┃   @   ┃   !   ┃   =   ┃   $   ┃                          ┃       ┃ SHIFT ┃  CTRL ┃  ALT  ┃ RGUI  ┃       ┃
-&kp TILDE &kp CARET &kp AT &kp EXCL &kp EQUAL &kp DLLR                          &none &kp RSHFT &kp LCTL &kp LALT &kp RGUI &none
+// ┃   `   ┃   ^   ┃   @   ┃   !   ┃   =   ┃   $   ┃                          ┃       ┃ SHIFT ┃  CTRL ┃  ALT  ┃ RGUI  ┃       ┃
+&kp GRAVE &kp CARET &kp AT &kp EXCL &kp EQUAL &kp DLLR                          &none &kp RSHFT &kp LCTL &kp LALT &kp RGUI &none
 // ┗━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┛
 //         ┃   <   ┃   >   ┃   [   ┃   ]   ┃   \   ┃                          ┃       ┃       ┃       ┃       ┃       ┃
              &kp LT &kp GT &kp LBKT &kp RBKT &kp BSLH                          &none   &none   &none   &none   &none
