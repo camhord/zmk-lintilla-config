@@ -76,21 +76,21 @@
             bindings = <
 //         ┏━━━━━━━┓                                                                                          ┏━━━━━━━┓
 //         ┃ Esc   ┃                                                                                          ┃  BSPC ┃
-            &kp ESC                                                                                           &lt 5 BSPC
-//         ┃       ┃                                                                                          ┃ keybd ┃
+            &kp ESC                                                                                           &kp BSPC
+//         ┃       ┃                                                                                          ┃       ┃
 // ┏━━━━━━━╋━━━━━━━╋━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓                          ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━╋━━━━━━━╋━━━━━━━┓
 // ┃  TAB  ┃   Q   ┃   W   ┃   E   ┃   R   ┃   T   ┃                          ┃   Y   ┃   U   ┃   I   ┃   O   ┃   P   ┃  ' "  ┃
     &kp TAB  &kp Q   &kp W   &kp E   &kp R   &kp T                              &kp Y   &kp U   &kp I   &kp O   &kp P  &kp SQT
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
 // ┃  DEL  ┃   A   ┃   S   ┃   D   ┃   F   ┃   G   ┃                          ┃   H   ┃   J   ┃   K   ┃   L   ┃  ; :  ┃ RETURN┃
-   &kp DEL   LGm A   LAm S   LCm D   LSm F   &kp G                              &kp H   RSm J   LCm K   LAm L  RGm SEMI &kp RET
-// ┃       ┃ LGUI  ┃ LAlt  ┃ LCTRL ┃ LSHFT ┃       ┃                          ┃       ┃ RSHFT ┃ LCTRL ┃ LALT  ┃ RGUI  ┃       ┃
+   &lt 5 DEL LGm A   LAm S   LCm D   LSm F   &kp G                              &kp H   RSm J   LCm K   LAm L  RGm SEMI &kp RET
+// ┃ keybd ┃ LGUI  ┃ LAlt  ┃ LCTRL ┃ LSHFT ┃       ┃                          ┃       ┃ RSHFT ┃ LCTRL ┃ LALT  ┃ RGUI  ┃       ┃
 // ┗━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┛
 //         ┃   Z   ┃   X   ┃   C   ┃   V   ┃   B   ┃                          ┃   N   ┃   M   ┃  , <  ┃  . >  ┃  / ?  ┃
              &kp Z   &kp X   &kp C   &kp V   &kp B                              &kp N   &kp M &kp COMMA &kp DOT &kp FSLH
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
-//                                     ┃  num  ┃ SHIFT ┃ FN -  ┃  ┃SYM RET┃ SPACE ┃  nav  ┃
-                                &lt 1 BSPC &kp LSHFT &lt 3 MINUS  &lt 4 RET &kp SPC &lt 2 DEL
+//                                     ┃  num  ┃ SHIFT ┃  FN   ┃  ┃  SYM  ┃ SPACE ┃  nav  ┃
+                                         &mo 1 &kp LSHFT &lt 3      &mo 4  &kp SPC  &mo 2
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
@@ -128,11 +128,11 @@
 //                       ┗━━━━━━━━━━━━━━━━━━━━━━━━━┛
             bindings = <
 //         ┏━━━━━━━┓                                                                                          ┏━━━━━━━┓
-//         ┃       ┃                                                                                          ┃ BKSPC ┃
-             &none                                                                                             &kp BSPC
+//         ┃       ┃                                                                                          ┃  DEL  ┃
+             &none                                                                                             &kp DEL
 // ┏━━━━━━━╋━━━━━━━╋━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓                          ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━╋━━━━━━━╋━━━━━━━┓
-// ┃       ┃       ┃       ┃       ┃       ┃       ┃                          ┃ Pg Up ┃  Home ┃  END  ┃       ┃       ┃  DEL  ┃
-     &none   &none   &none   &none   &none   &none                            &kp PG_UP &kp HOME &kp END &none  &none  &kp DEL
+// ┃       ┃       ┃       ┃       ┃       ┃       ┃                          ┃ Pg Up ┃  Home ┃  END  ┃       ┃       ┃       ┃
+     &none   &none   &none   &none   &none   &none                            &kp PG_UP &kp HOME &kp END &none  &none   &none
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
 // ┃       ┃       ┃       ┃       ┃       ┃       ┃                          ┃ Left  ┃ Down  ┃  Up   ┃ Right ┃       ┃       ┃
     &none &kp LGUI &kp LALT &kp LCTL &kp LSHFT &none                          &kp LEFT &kp DOWN &kp UP &kp RIGHT &none  &none
@@ -182,8 +182,8 @@
 //         ┃       ┃                                                                                          ┃       ┃
              &none                                                                                              &none
 // ┏━━━━━━━╋━━━━━━━╋━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓                          ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━╋━━━━━━━╋━━━━━━━┓
-// ┃   ~   ┃   *   ┃   #   ┃   +   ┃   %   ┃   _   ┃                          ┃       ┃ CtrlU ┃ CtrlI ┃       ┃       ┃       ┃
-&kp TILDE &kp STAR &kp HASH &kp PLUS &kp PRCNT &kp UNDER                        &none &kp LC(U) &kp LC(I) &none &none   &none
+// ┃   ~   ┃   *   ┃   #   ┃   +   ┃   %   ┃   _   ┃                          ┃       ┃ CtrlU ┃ CtrlI ┃   (   ┃   )   ┃       ┃
+&kp TILDE &kp STAR &kp HASH &kp PLUS &kp PRCNT &kp UNDER                      &none &kp LC(U) &kp LC(I) &kp LPAR &kp RPAR &none
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
 // ┃   `   ┃   ^   ┃   @   ┃   !   ┃   =   ┃   $   ┃                          ┃       ┃ SHIFT ┃  CTRL ┃  ALT  ┃ RGUI  ┃       ┃
 &kp GRAVE &kp CARET &kp AT &kp EXCL &kp EQUAL &kp DLLR                          &none &kp RSHFT &kp LCTL &kp LALT &kp RGUI &none
@@ -204,14 +204,14 @@
 //                       ┗━━━━━━━━━━━━━━━━━━━━━━━━━┛
             bindings = <
 //         ┏━━━━━━━┓                                                                                          ┏━━━━━━━┓
-//         ┃ dongle┃                                                                                          ┃ ##### ┃
-           &flash 6                                                                                             &trans
+//         ┃ dongle┃                                                                                          ┃       ┃
+           &flash 6                                                                                             &none
 // ┏━━━━━━━╋━━━━━━━╋━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓                          ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━╋━━━━━━━╋━━━━━━━┓
-// ┃ brt + ┃       ┃       ┃scrnsht┃       ┃       ┃                          ┃con led┃       ┃bat led┃       ┃       ┃       ┃
-&kp C_BRI_UP &none   &none  GS(S)   &none    &none                            &ind_con  &none &ind_bat  &none   &none   &none
+// ┃       ┃       ┃       ┃scrnsht┃       ┃       ┃                          ┃con led┃       ┃bat led┃       ┃       ┃       ┃
+     &none   &none   &none  GS(S)   &none    &none                            &ind_con  &none &ind_bat  &none   &none   &none
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
-// ┃ brt - ┃  BT1  ┃  BT2  ┃  BT3  ┃  BT4  ┃  BT5  ┃                          ┃       ┃       ┃       ┃       ┃       ┃       ┃
-&kp C_BRI_DN BT_(0)  BT_(1)  BT_(2)  BT_(3)  BT_(4)                             &none   &none   &none   &none   &none   &none
+// ┃ ##### ┃  BT1  ┃  BT2  ┃  BT3  ┃  BT4  ┃  BT5  ┃                          ┃       ┃       ┃       ┃       ┃       ┃       ┃
+    &trans   BT_(0)  BT_(1)  BT_(2)  BT_(3)  BT_(4)                             &none   &none   &none   &none   &none   &none
 // ┗━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┛
 //         ┃ flash ┃       ┃caps lk┃ numlk ┃       ┃                          ┃       ┃       ┃       ┃       ┃ flash ┃
         &bootloader &none &kp CAPS &kp LNLCK &none                              &none   &none   &none   &none &bootloader
