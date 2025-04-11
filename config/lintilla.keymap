@@ -46,14 +46,6 @@
 
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        function_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
-
     macros {
         bt_clr: bluetooth_clear {
             compatible = "zmk,behavior-macro-one-param";
