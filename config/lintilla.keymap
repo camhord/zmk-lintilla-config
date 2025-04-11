@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <behaviors/rgbled_widget.dtsi>
+#include <dt-bindings/zmk/pointing.h>
 
 // Multiple mods
 #define GS(key) &kp LG(LS(key))
@@ -97,7 +98,7 @@
              &kp Z   &kp X   &kp C   &kp V   &kp B                              &kp N   &kp M &kp COMMA &kp DOT &kp FSLH
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
 //                                     ┃  num  ┃ SHIFT ┃ RET FN┃  ┃  SYM  ┃ SPACE ┃  nav  ┃
-                                       &mo 1 &kp LSHFT &lt 3 RET  &mo 4 &kp SPC &mo 2
+                                        &mo 1 &kp LSHFT &lt 3 RET   &mo 4  &kp SPC  &mo 2
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
