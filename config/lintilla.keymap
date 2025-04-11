@@ -75,22 +75,22 @@
 //                       ┗━━━━━━━━━━━━━━━━━━━━━━━━━┛
             bindings = <
 //         ┏━━━━━━━┓                                                                                          ┏━━━━━━━┓
-//         ┃ Esc   ┃                                                                                          ┃  DEL  ┃
-            &kp ESC                                                                                           &lt 5 DEL
+//         ┃ Esc   ┃                                                                                          ┃  BSPC ┃
+            &kp ESC                                                                                           &lt 5 BSPC
 //         ┃       ┃                                                                                          ┃ keybd ┃
 // ┏━━━━━━━╋━━━━━━━╋━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓                          ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━╋━━━━━━━╋━━━━━━━┓
-// ┃  TAB  ┃   Q   ┃   W   ┃   E   ┃   R   ┃   T   ┃                          ┃   Y   ┃   U   ┃   I   ┃   O   ┃   P   ┃ BKSPC ┃
-    &kp TAB  &kp Q   &kp W   &kp E   &kp R   &kp T                              &kp Y   &kp U   &kp I   &kp O   &kp P  &kp BSPC
+// ┃  TAB  ┃   Q   ┃   W   ┃   E   ┃   R   ┃   T   ┃                          ┃   Y   ┃   U   ┃   I   ┃   O   ┃   P   ┃  ' "  ┃
+    &kp TAB  &kp Q   &kp W   &kp E   &kp R   &kp T                              &kp Y   &kp U   &kp I   &kp O   &kp P  &kp SQT
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
-// ┃  ESC  ┃   A   ┃   S   ┃   D   ┃   F   ┃   G   ┃                          ┃   H   ┃   J   ┃   K   ┃   L   ┃  ; :  ┃  ' "  ┃
-   &kp LCTL  LGm A   LAm S   LCm D   LSm F   &kp G                              &kp H   RSm J   LCm K   LAm L  RGm SEMI &kp SQT
+// ┃  DEL  ┃   A   ┃   S   ┃   D   ┃   F   ┃   G   ┃                          ┃   H   ┃   J   ┃   K   ┃   L   ┃  ; :  ┃ RETURN┃
+   &kp DEL   LGm A   LAm S   LCm D   LSm F   &kp G                              &kp H   RSm J   LCm K   LAm L  RGm SEMI &kp RET
 // ┃       ┃ LGUI  ┃ LAlt  ┃ LCTRL ┃ LSHFT ┃       ┃                          ┃       ┃ RSHFT ┃ LCTRL ┃ LALT  ┃ RGUI  ┃       ┃
 // ┗━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┛
 //         ┃   Z   ┃   X   ┃   C   ┃   V   ┃   B   ┃                          ┃   N   ┃   M   ┃  , <  ┃  . >  ┃  / ?  ┃
              &kp Z   &kp X   &kp C   &kp V   &kp B                              &kp N   &kp M &kp COMMA &kp DOT &kp FSLH
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
-//                                     ┃  num  ┃ SHIFT ┃ RET FN┃  ┃  SYM  ┃ SPACE ┃  nav  ┃
-                                        &mo 1 &kp LSHFT &lt 3 RET   &mo 4  &kp SPC  &mo 2
+//                                     ┃  num  ┃ SHIFT ┃ FN -  ┃  ┃  SYM  ┃ SPACE ┃  nav  ┃
+                                     &mo 1 &kp LSHFT &lt 3 MINUS  &lt 4 BSPC &kp SPC &mo 2
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
@@ -102,11 +102,11 @@
 //                       ┗━━━━━━━━━━━━━━━━━━━━━━━━━┛
             bindings = <
 //         ┏━━━━━━━┓                                                                                          ┏━━━━━━━┓
-//         ┃       ┃                                                                                          ┃  DEL  ┃
-             &none                                                                                             &kp DEL
+//         ┃       ┃                                                                                          ┃ BKSPC ┃
+             &none                                                                                             &kp BSPC
 // ┏━━━━━━━╋━━━━━━━╋━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓                          ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━╋━━━━━━━╋━━━━━━━┓
-// ┃       ┃       ┃       ┃   (   ┃   )   ┃       ┃                          ┃   /   ┃   7   ┃   8   ┃   9   ┃   -   ┃ BKSPC ┃
-     &none   &none   &none &kp LPAR &kp RPAR  &none                            &kp SLASH &kp N7  &kp N8  &kp N9 &kp MINUS &kp BSPC
+// ┃       ┃       ┃  SAVE ┃   (   ┃   )   ┃       ┃                          ┃   /   ┃   7   ┃   8   ┃   9   ┃   -   ┃       ┃
+     &none  &none &kp LC(S) &kp LPAR &kp RPAR  &none                            &kp SLASH &kp N7  &kp N8  &kp N9 &kp MINUS &none
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
 // ┃       ┃       ┃       ┃       ┃       ┃       ┃                          ┃   *   ┃   4   ┃   5   ┃   6   ┃   +   ┃RETURN ┃
     &none &kp LGUI &kp LALT &kp LCTL &kp LSHFT &none                          &kp STAR &kp N4  &kp N5  &kp N6 &kp PLUS &kp RET
