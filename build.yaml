@@ -10,4 +10,10 @@ include:
     shield: lintilla_right_peripheral rgbled_adapter
     artifact-name: lintilla-right
 
+  - board: seeeduino_xiao_ble
+    shield: lintilla_simple_dongle
+  - board: seeeduino_xiao_ble
+    shield: lintilla_left_central
+    artifact-name: lintilla-left-central
+
 
