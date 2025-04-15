@@ -170,7 +170,7 @@
 &kp GRAVE &kp LGUI &kp LALT &kp LCTL &kp LSHFT &none                          &kp LBKT &kp RBKT &kp MINUS &kp EQUAL &none &kp PIPE
 // ┗━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┛
 //         ┃ CtrlZ ┃ CtrlX ┃ CtrlC ┃ CtrlV ┃       ┃                          ┃   <   ┃   >   ┃   _   ┃   +   ┃       ┃
-       &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none                           &kp LT &kp GT &kp UNDER &kp PLUS &n11111one
+       &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none                           &kp LT &kp GT &kp UNDER &kp PLUS &none
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
 //                                     ┃       ┃ LSHFT ┃       ┃  ┃ ##### ┃       ┃       ┃
                                          &none &kp LSHFT &none      &trans  &none  &none
