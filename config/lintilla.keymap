@@ -198,7 +198,7 @@
             &none   &none &kp CAPS &kp LNLCK &none                              &none   &none   &none   &none   &none
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
 //                                     ┃ vol - ┃ mute  ┃ vol + ┃  ┃ prev  ┃ play  ┃ next  ┃
-                                &kp C_VOL_DN &C_MUTE &kp C_VOL_UP &kp C_PREV &kp C_PP &kp C_NEXT
+                             &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP &kp C_PREV &kp C_PP &kp C_NEXT
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
