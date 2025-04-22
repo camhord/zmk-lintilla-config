@@ -139,7 +139,7 @@
              &none                                                                                             &kp DEL
 // ┏━━━━━━━╋━━━━━━━╋━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓                          ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━╋━━━━━━━╋━━━━━━━┓
 // ┃       ┃   F1  ┃  F2   ┃  F3   ┃  F4   ┃  F5   ┃                          ┃   F6  ┃  F7   ┃  F8   ┃  F9   ┃  F10  ┃  F11  ┃
-     &none  &kp F1  &kp F2  &kp F3  &kp F4  &kp F10                            &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+     &none  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                            &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
 // ┃       ┃ LGUI  ┃ LAlt  ┃ LCTRL ┃ LSHFT ┃       ┃                          ┃       ┃ SHIFT ┃  CTRL ┃  ALT  ┃ RGUI  ┃  F12  ┃
     &none &kp LGUI &kp LALT &kp LCTL &kp LSHFT &none                          &none &kp RSHFT &kp LCTL &kp LALT &kp RGUI &kp F12
