@@ -70,8 +70,8 @@
 //         ┃   Z   ┃   X   ┃   C   ┃   V   ┃   B   ┃                          ┃   N   ┃   M   ┃  , <  ┃  . >  ┃  / ?  ┃
              &kp Z   &kp X   &kp C   &kp V   &kp B                              &kp N   &kp M &kp COMMA &kp DOT &kp FSLH
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
-//                                     ┃  num  ┃ SHIFT ┃  FN   ┃  ┃  SYM  ┃ SPACE ┃  nav  ┃
-                                         &mo 1 &kp LSHFT &mo 3      &mo 5  &kp SPC  &mo 2
+//                                     ┃  FN   ┃ SHIFT ┃  NUM  ┃  ┃  SYM  ┃ SPACE ┃  nav  ┃
+                                         &mo 3 &kp LSHFT &mo 1      &mo 5  &kp SPC  &mo 2
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
@@ -96,8 +96,8 @@
 //         ┃ CtrlZ ┃ CtrlX ┃ CtrlC ┃ CtrlV ┃       ┃                          ┃       ┃       ┃       ┃       ┃       ┃
          &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none                          &none   &none   &none   &none   &none
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
-//                                     ┃ ##### ┃       ┃       ┃  ┃       ┃ SPACE ┃       ┃
-                                         &trans  &trans  &none      &none  &kp SPC  &none
+//                                     ┃       ┃       ┃ ##### ┃  ┃       ┃ SPACE ┃       ┃
+                                         &none  &trans  &trans      &none  &kp SPC  &none
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
@@ -147,8 +147,8 @@
 //         ┃ CtrlZ ┃ CtrlX ┃ CtrlC ┃ CtrlV ┃       ┃                          ┃       ┃       ┃       ┃       ┃       ┃
         &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none                           &none   &none   &none   &none   &none
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
-//                                     ┃       ┃       ┃ ##### ┃  ┃  F12  ┃  F11  ┃  F10  ┃
-                                         &none   &none  &trans     &kp F12 &kp F11 &kp F10
+//                                     ┃ ##### ┃       ┃       ┃  ┃  F12  ┃  F11  ┃  F10  ┃
+                                         &trans   &none  &none     &kp F12 &kp F11 &kp F10
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
