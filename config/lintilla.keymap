@@ -90,7 +90,7 @@
      &none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                             &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &none
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
 // ┃       ┃ LGUI  ┃ LAlt  ┃ LCTRL ┃ LSHFT ┃       ┃                          ┃       ┃ SHIFT ┃  CTRL ┃  ALT  ┃ RGUI  ┃       ┃
-    &none &kp LGUI &kp LALT &kp LCTL &kp LSHFT &none                          &none &kp RSHFT &kp LCTL &kp LALT &kp RGUI &none
+    &none &kp LGUI &kp LALT &kp LCTL &kp LSHFT &none                          &none &kp RSHFT &kp LCTL &kp LALT &kp RGUI &trans
 // ┃       ┃       ┃       ┃       ┃       ┃       ┃                          ┃       ┃       ┃       ┃       ┃       ┃       ┃
 // ┗━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┛
 //         ┃ CtrlZ ┃ CtrlX ┃ CtrlC ┃ CtrlV ┃       ┃                          ┃       ┃       ┃       ┃       ┃       ┃
@@ -116,7 +116,7 @@
   &kp LCTL   &none   &none   &none   &none   &none                            &kp PG_UP &kp HOME &kp END &none  &none   &none
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
 // ┃       ┃ LGUI  ┃ LAlt  ┃ LCTRL ┃ LSHFT ┃       ┃                          ┃   ←   ┃   ↓   ┃   ↑   ┃   →   ┃ LCTRL ┃       ┃
-    &none &kp LGUI &kp LALT &kp LCTL &kp LSHFT &none                          &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp LCTL &none
+    &none &kp LGUI &kp LALT &kp LCTL &kp LSHFT &none                          &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp LCTL &trans
 // ┃       ┃       ┃       ┃       ┃       ┃       ┃                          ┃       ┃       ┃       ┃       ┃       ┃       ┃
 // ┗━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┛
 //         ┃ CtrlZ ┃ CtrlX ┃ CtrlC ┃ CtrlV ┃       ┃                          ┃ Pg Dn ┃       ┃       ┃       ┃       ┃
