@@ -50,7 +50,7 @@
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
-        tri_layer {
+        layer3_when_1_and_5 {
             if-layers = <1 5>;
             then-layer = <3>;
         };
@@ -105,7 +105,7 @@
          &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none                          &none   &none   &none   &none   &none
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
 //                                     ┃ ##### ┃ ##### ┃ ##### ┃  ┃ ##### ┃ SPACE ┃       ┃
-                                         &trans  &trans  &trans    &trans  &kp SPC  &none
+                                         &mo 5   &trans  &mo 1     &mo 5   &kp SPC  &none
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
@@ -131,7 +131,7 @@
         &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none                        &kp PG_DN &mkp MB4 &mkp MB5 &none  &none
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
 //                                     ┃       ┃       ┃       ┃  ┃       ┃       ┃ ##### ┃
-                                        &none  &kp LSHFT &none      &none  &kp SPC  &trans
+                                         &none   &trans  &none      &none   &trans  &trans
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
@@ -155,8 +155,8 @@
 //         ┃ CtrlZ ┃ CtrlX ┃ CtrlC ┃ CtrlV ┃       ┃                          ┃       ┃       ┃       ┃       ┃       ┃
         &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none                           &none   &none   &none   &none   &none
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
-//                                     ┃ ##### ┃       ┃       ┃  ┃  F12  ┃  F11  ┃  F10  ┃
-                                         &trans  &none   &none     &kp F12 &kp F11 &kp F10
+//                                     ┃ ##### ┃       ┃       ┃  ┃       ┃       ┃       ┃
+                                         &mo 5   &trans  &mo 1      &mo 5  &kp SPC  &none
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
@@ -205,8 +205,8 @@
 //         ┃ CtrlZ ┃ CtrlX ┃ CtrlC ┃ CtrlV ┃       ┃                          ┃   <   ┃   >   ┃   _   ┃   +   ┃       ┃
        &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none                           &kp LT &kp GT &kp UNDER &kp PLUS &none
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
-//                                     ┃ ##### ┃ LSHFT ┃ ##### ┃  ┃ ##### ┃       ┃       ┃
-                                        &trans &kp LSHFT &trans     &trans  &none  &none
+//                                     ┃       ┃ LSHFT ┃ ##### ┃  ┃       ┃ SPACE ┃       ┃
+                                         &mo 5   &trans  &mo 1      &mo 5  &trans  &none
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
