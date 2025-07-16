@@ -151,8 +151,8 @@
 // ┃  F12  ┃  F1   ┃  F2   ┃  F3   ┃  F4   ┃  F5   ┃                          ┃       ┃ VOL-  ┃ VOL+  ┃       ┃ PSCRN ┃       ┃
     &kp F12 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                          &none &kp C_VOL_DN &kp C_VOL_UP &none &kp PSCRN &none
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
-// ┃  F11  ┃  F6   ┃  F7   ┃  F8   ┃  F9   ┃  F10  ┃                          ┃       ┃ SHIFT ┃  CTRL ┃  ALT  ┃ RGUI  ┃       ┃
-    &kp F11 &kp F6  &kp F7  &kp F8  &kp F9  &kp F10                             &none  &kp RSHFT &kp LCTL &kp LALT &kp RGUI &none
+// ┃  F11  ┃  F10  ┃  F9   ┃  F8   ┃  F7   ┃  F6   ┃                          ┃       ┃ SHIFT ┃  CTRL ┃  ALT  ┃ RGUI  ┃       ┃
+    &kp F11 &kp F10 &kp F9  &kp F8  &kp F7  &kp F6                             &none  &kp RSHFT &kp LCTL &kp LALT &kp RGUI &none
 // ┗━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┛
 //         ┃       ┃       ┃caps lk┃       ┃       ┃                          ┃ numlk ┃ play  ┃ prev  ┃ next  ┃       ┃ 
              &none   &none  &kp CAPS &none   &none                          &kp LNLCK &kp C_PP &kp C_PREV &kp C_NEXT &none
