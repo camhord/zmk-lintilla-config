@@ -91,21 +91,21 @@
 //                       ┗━━━━━━━━━━━━━━━━━━━━━━━━━┛
             bindings = <
 //         ┏━━━━━━━┓                                                                                          ┏━━━━━━━┓
-//         ┃       ┃                                                                                          ┃ BSPC  ┃
-             &none                                                                                             &kp BSPC
+//         ┃ ##### ┃                                                                                          ┃ BSPC  ┃
+             &trans                                                                                             &kp BSPC
 // ┏━━━━━━━╋━━━━━━━╋━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓                          ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━╋━━━━━━━╋━━━━━━━┓
 // ┃   `   ┃       ┃       ┃       ┃       ┃       ┃                          ┃   [   ┃   ]   ┃   -   ┃   =   ┃   ;   ┃   \   ┃
    &kp GRAVE &none   &none   &none   &none   &none                         &kp LBKT &kp RBKT &kp MINUS &kp EQUAL &kp SEMI &kp BSLH
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
 // ┃       ┃   1   ┃   2   ┃   3   ┃   4   ┃   5   ┃                          ┃   6   ┃   7   ┃   8   ┃   9   ┃   0   ┃       ┃
-    &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                             &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans  
-// ┃       ┃       ┃       ┃       ┃       ┃       ┃                          ┃       ┃       ┃       ┃       ┃       ┃       ┃
+    &trans  LGm N1  LAm N2  LCm N3  LSm N4  &kp N5                             &kp N6  RSm N7  LCm N8  LAm N9  LGm N0  &trans  
+// ┃       ┃ LGUI  ┃ LAlt  ┃ LCTRL ┃ LSHFT ┃       ┃                          ┃       ┃ RSHFT ┃ LCTRL ┃ LALT  ┃ RGUI  ┃       ┃
 // ┗━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┛
 //         ┃ CtrlZ ┃ CtrlX ┃ CtrlC ┃ CtrlV ┃       ┃                          ┃       ┃       ┃  , <  ┃  . >  ┃  / ?  ┃ 
-         &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none                         &none   &none &kp COMMA &kp DOT &kp FSLH
+         &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none                          &none  &none &kp COMMA &kp DOT &kp FSLH
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
-//                                     ┃ ##### ┃ ##### ┃ ##### ┃  ┃ ##### ┃ SPACE ┃       ┃
-                                         &mo 2   &trans  &mo 2      &mo 2  &kp SPC  &none
+//                                     ┃  LALT ┃ ##### ┃ ##### ┃  ┃ ##### ┃ SPACE ┃ LCTRL ┃
+                                         &LALT  &trans   &mo 2      &mo 2  &kp SPC  &LCTRL
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
