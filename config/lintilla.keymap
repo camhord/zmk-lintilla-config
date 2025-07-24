@@ -65,14 +65,14 @@
 //                       ┗━━━━━━━━━━━━━━━━━━━━━━━━━┛
             bindings = <
 //         ┏━━━━━━━┓                                                                                          ┏━━━━━━━┓
-//         ┃  LGUI ┃                                                                                          ┃ BSPC  ┃
-            &kp LGUI                                                                                           &kp BSPC
+//         ┃  ESC  ┃                                                                                          ┃ BSPC  ┃
+            &kp ESC                                                                                           &kp BSPC
 // ┏━━━━━━━╋━━━━━━━╋━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓                          ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━╋━━━━━━━╋━━━━━━━┓
 // ┃  TAB  ┃   Q   ┃   W   ┃   E   ┃   R   ┃   T   ┃                          ┃   Y   ┃   U   ┃   I   ┃   O   ┃   P   ┃  ' "  ┃
     &kp TAB  &kp Q   &kp W   &kp E   &kp R   &kp T                              &kp Y   &kp U   &kp I   &kp O   &kp P  &kp SQT
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
-//    ESC  ┃   A   ┃   S   ┃   D   ┃   F   ┃   G   ┃                          ┃   H   ┃   J   ┃   K   ┃   L   ┃  ; :  ┃ RETURN┃
-    &kp ESC  LGm A   LAm S   LCm D   LSm F   &kp G                              &kp H   RSm J   LCm K   LAm L  RGm SEMI &kp RET
+//   LGUI  ┃   A   ┃   S   ┃   D   ┃   F   ┃   G   ┃                          ┃   H   ┃   J   ┃   K   ┃   L   ┃  ; :  ┃ RETURN┃
+   &kp LGUI  LGm A   LAm S   LCm D   LSm F   &kp G                              &kp H   RSm J   LCm K   LAm L  RGm SEMI &kp RET
 // ┃       ┃ LGUI  ┃ LAlt  ┃ LCTRL ┃ LSHFT ┃       ┃                          ┃       ┃ RSHFT ┃ LCTRL ┃ LALT  ┃ RGUI  ┃       ┃
 // ┗━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┛
 //         ┃   Z   ┃   X   ┃   C   ┃   V   ┃   B   ┃                          ┃   N   ┃   M   ┃  , <  ┃  . >  ┃  / ?  ┃
@@ -117,8 +117,8 @@
 //                       ┗━━━━━━━━━━━━━━━━━━━━━━━━━┛
             bindings = <
 //         ┏━━━━━━━┓                                                                                          ┏━━━━━━━┓
-//         ┃       ┃                                                                                          ┃  DEL  ┃
-             &none                                                                                             &kp DEL
+//         ┃ ##### ┃                                                                                          ┃  DEL  ┃
+             &trans                                                                                             &kp DEL
 // ┏━━━━━━━╋━━━━━━━╋━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓                          ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━╋━━━━━━━╋━━━━━━━┓
 // ┃ LCTRL ┃       ┃       ┃       ┃       ┃       ┃                          ┃ Pg Up ┃ Home  ┃  END  ┃       ┃       ┃       ┃
   &kp LCTL   &none   &none   &none   &none   &none                            &kp PG_UP &kp HOME &kp END &none  &none   &none
