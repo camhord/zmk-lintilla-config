@@ -131,7 +131,7 @@
         &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none                        &kp PG_DN &mkp MB4 &mkp MB5 &none  &none
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
 //                                     ┃       ┃       ┃       ┃  ┃       ┃       ┃ ##### ┃
-                                         &none   &trans  &none      &none   &trans  &trans
+                                         &none   &trans  &trans    &none   &trans  &trans
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
