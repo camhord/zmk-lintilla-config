@@ -78,8 +78,8 @@
 //         ┃   Z   ┃   X   ┃   C   ┃   V   ┃   B   ┃                          ┃   N   ┃   M   ┃  , <  ┃  . >  ┃  / ?  ┃
              &kp Z   &kp X   &kp C   &kp V   &kp B                              &kp N   &kp M &kp COMMA &kp DOT &kp FSLH
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
-//                                     ┃ LALT  ┃ SHIFT ┃  NUM  ┃  ┃  NUM  ┃ SPACE ┃  nav  ┃
-                                        &kp LALT &kp LSHFT &mo 1    &mo 1  &kp SPC  &mo 2
+//                                     ┃ LALT  ┃ SHIFT ┃  CTRL ┃  ┃  NUM  ┃ SPACE ┃  nav  ┃
+                                     &kp LALT &kp LSHFT &kp LCTL    &mo 1  &kp SPC  &mo 2
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
@@ -104,8 +104,8 @@
 //         ┃ CtrlZ ┃ CtrlX ┃ CtrlC ┃ CtrlV ┃       ┃                          ┃       ┃       ┃  , <  ┃  . >  ┃  / ?  ┃ 
          &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none                          &none  &none &kp COMMA &kp DOT &kp FSLH
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
-//                                     ┃  LALT ┃ ##### ┃ ##### ┃  ┃ ##### ┃ SPACE ┃ LCTRL ┃
-                                        &kp LALT &trans  &mo 2      &mo 2  &kp SPC &kp LCTRL
+//                                     ┃  LALT ┃ ##### ┃ FUNC  ┃  ┃ ##### ┃ SPACE ┃ LCTRL ┃
+                                        &kp LALT &trans  &mo 2     &trans &kp SPC &kp LCTRL
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
@@ -148,8 +148,8 @@
 //         ┃       ┃                                                                                          ┃  DEL  ┃
              &none                                                                                             &kp DEL
 // ┏━━━━━━━╋━━━━━━━╋━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓                          ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━╋━━━━━━━╋━━━━━━━┓
-// ┃  F12  ┃  F1   ┃  F2   ┃  F3   ┃  F4   ┃  F5   ┃                          ┃       ┃ VOL-  ┃ VOL+  ┃       ┃ PSCRN ┃       ┃
-    &kp F12 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                          &none &kp C_VOL_DN &kp C_VOL_UP &none &kp PSCRN &none
+// ┃  F12  ┃  F1   ┃  F2   ┃  F3   ┃  F4   ┃  F5   ┃                          ┃       ┃       ┃ VOL-  ┃ VOL+  ┃ PSCRN ┃       ┃
+    &kp F12 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                           &none &none &kp C_VOL_DN &kp C_VOL_UP &kp PSCRN &none
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
 // ┃  F11  ┃  F10  ┃  F9   ┃  F8   ┃  F7   ┃  F6   ┃                          ┃       ┃ SHIFT ┃  CTRL ┃  ALT  ┃ RGUI  ┃       ┃
     &kp F11 &kp F10 &kp F9  &kp F8  &kp F7  &kp F6                             &none  &kp RSHFT &kp LCTL &kp LALT &kp RGUI &none
