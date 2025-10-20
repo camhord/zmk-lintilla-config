@@ -46,6 +46,14 @@
             display-name = "Layer-Tap";
         };
 
+        alt_tap:
+            - &kp LALT
+            - &kp LALT &kp LCTRL
+
+        ctrl_tap:
+            - &kp LCTRL
+            - &kp LCTRL &kp LSHIFT
+
     };
 
     conditional_layers {
@@ -79,7 +87,7 @@
              &kp Z   &kp X   &kp C   &kp V   &kp B                              &kp N   &kp M &kp COMMA &kp DOT &kp FSLH
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
 //                                     ┃ LALT  ┃ SHIFT ┃  CTRL ┃  ┃  NUM  ┃ SPACE ┃  nav  ┃
-                                     &kp LALT &kp LSHFT &kp LCTL    &mo 1  &kp SPC  &mo 2
+                                       alt_tap &kp LSHFT ctrl_tap   &mo 1  &kp SPC  &mo 2
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
@@ -104,8 +112,8 @@
 //         ┃ CtrlZ ┃ CtrlX ┃ CtrlC ┃ CtrlV ┃       ┃                          ┃       ┃       ┃  , <  ┃  . >  ┃  / ?  ┃ 
          &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none                          &none  &none &kp COMMA &kp DOT &kp FSLH
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
-//                                     ┃  LALT ┃ ##### ┃ FUNC  ┃  ┃ ##### ┃ SPACE ┃ LCTRL ┃
-                                        &kp LALT &trans  &mo 2     &trans &kp SPC &kp LCTRL
+//                                     ┃  LALT ┃ SHIFT ┃ FUNC  ┃  ┃ ##### ┃ SPACE ┃ LCTRL ┃
+                                       alt_tap &kp LSHFT &mo 2     &trans &kp SPC &kp LCTRL
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
@@ -130,8 +138,8 @@
 //         ┃ CtrlZ ┃ CtrlX ┃ CtrlC ┃ CtrlV ┃       ┃                          ┃ Pg Dn ┃  MBCK ┃  MFWD ┃       ┃       ┃
         &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none                        &kp PG_DN &mkp MB4 &mkp MB5 &none  &none
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
-//                                     ┃       ┃       ┃       ┃  ┃       ┃       ┃ ##### ┃
-                                         &none   &trans  &trans    &none   &trans  &trans
+//                                     ┃ LALT  ┃ SHIFT ┃  CTRL ┃  ┃       ┃       ┃ ##### ┃
+                                      alt_tap &kp LSHFT ctrl_tap   &none   &trans  &trans
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
