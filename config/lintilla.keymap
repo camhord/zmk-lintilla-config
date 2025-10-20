@@ -46,14 +46,6 @@
             display-name = "Layer-Tap";
         };
 
-        alt_tap:
-            - &kp LALT
-            - &kp LALT &kp LCTRL
-
-        ctrl_tap:
-            - &kp LCTRL
-            - &kp LCTRL &kp LSHIFT
-
     };
 
     conditional_layers {
@@ -87,7 +79,7 @@
              &kp Z   &kp X   &kp C   &kp V   &kp B                              &kp N   &kp M &kp COMMA &kp DOT &kp FSLH
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
 //                                     ┃ LALT  ┃ SHIFT ┃  CTRL ┃  ┃  NUM  ┃ SPACE ┃  nav  ┃
-                                       alt_tap &kp LSHFT ctrl_tap   &mo 1  &kp SPC  &mo 2
+                                     &kp LALT &kp LSHFT &kp LCTL    &mo 1  &kp SPC  &mo 2
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
@@ -113,7 +105,7 @@
          &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none                          &none  &none &kp COMMA &kp DOT &kp FSLH
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
 //                                     ┃  LALT ┃ SHIFT ┃ FUNC  ┃  ┃ ##### ┃ SPACE ┃ LCTRL ┃
-                                       alt_tap &kp LSHFT &mo 2     &trans &kp SPC &kp LCTRL
+                                       &kp LALT &kp LSHFT &mo 2     &trans &kp SPC &kp LCTRL
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
@@ -139,7 +131,7 @@
         &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none                        &kp PG_DN &mkp MB4 &mkp MB5 &none  &none
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
 //                                     ┃ LALT  ┃ SHIFT ┃  CTRL ┃  ┃       ┃       ┃ ##### ┃
-                                      alt_tap &kp LSHFT ctrl_tap   &none   &trans  &trans
+                                      &kp LALT &kp LSHFT &kp LCTL   &none   &trans  &trans
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
