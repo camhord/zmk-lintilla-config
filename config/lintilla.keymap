@@ -24,6 +24,10 @@
 // Magic bluetooth button
 #define BT_(btnum) &bt_key btnum btnum
 
+&sk {
+    lazy;
+};
+
 / {
     behaviors {
 
@@ -102,7 +106,7 @@
 // ┃       ┃       ┃       ┃       ┃       ┃       ┃                          ┃       ┃       ┃       ┃       ┃       ┃       ┃
 // ┗━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┛
 //         ┃ CtrlZ ┃ CtrlX ┃ CtrlC ┃ CtrlV ┃       ┃                          ┃ LGUI  ┃       ┃  , <  ┃  . >  ┃  / ?  ┃ 
-         &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none                        &kp LGUI &none &kp COMMA &kp DOT &kp FSLH
+         &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none                        &sk LGUI &none &kp COMMA &kp DOT &kp FSLH
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
 //                                     ┃  LALT ┃ SHIFT ┃ FUNC  ┃  ┃ ##### ┃ SPACE ┃ LCTRL ┃
                                        &kp LALT &kp LSHFT &mo 2     &trans &kp SPC &kp LCTRL
