@@ -71,9 +71,9 @@
 // ┃  TAB  ┃   Q   ┃   W   ┃   E   ┃   R   ┃   T   ┃                          ┃   Y   ┃   U   ┃   I   ┃   O   ┃   P   ┃  ' "  ┃
     &kp TAB  &kp Q   &kp W   &kp E   &kp R   &kp T                              &kp Y   &kp U   &kp I   &kp O   &kp P  &kp SQT
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
-//   LGUI  ┃   A   ┃   S   ┃   D   ┃   F   ┃   G   ┃                          ┃   H   ┃   J   ┃   K   ┃   L   ┃  ; :  ┃ RETURN┃
-   &kp LGUI  LGm A   LAm S   LCm D   LSm F   &kp G                              &kp H   RSm J   LCm K   LAm L  RGm SEMI &kp RET
-// ┃       ┃ LGUI  ┃ LAlt  ┃ LCTRL ┃ LSHFT ┃       ┃                          ┃       ┃ RSHFT ┃ LCTRL ┃ LALT  ┃ RGUI  ┃       ┃
+//    NUM  ┃   A   ┃   S   ┃   D   ┃   F   ┃   G   ┃                          ┃   H   ┃   J   ┃   K   ┃   L   ┃  ; :  ┃ RETURN┃
+     &mo 1   &kp A   &kp S   &kp D   &kp F   &kp G                              &kp H   &kp J   &kp K   &kp L   &kp SEMI &kp RET
+// ┃       ┃       ┃       ┃       ┃       ┃       ┃                          ┃       ┃       ┃       ┃       ┃       ┃       ┃
 // ┗━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┛
 //         ┃   Z   ┃   X   ┃   C   ┃   V   ┃   B   ┃                          ┃   N   ┃   M   ┃  , <  ┃  . >  ┃  / ?  ┃
              &kp Z   &kp X   &kp C   &kp V   &kp B                              &kp N   &kp M &kp COMMA &kp DOT &kp FSLH
@@ -98,11 +98,11 @@
    &kp GRAVE &none   &none   &none   &none   &none                         &kp LBKT &kp RBKT &kp MINUS &kp EQUAL &kp SEMI &kp BSLH
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
 // ┃       ┃   1   ┃   2   ┃   3   ┃   4   ┃   5   ┃                          ┃   6   ┃   7   ┃   8   ┃   9   ┃   0   ┃       ┃
-    &trans  LGm N1  LAm N2  LCm N3  LSm N4  &kp N5                             &kp N6  RSm N7  LCm N8  LAm N9  LGm N0  &trans  
-// ┃       ┃ LGUI  ┃ LAlt  ┃ LCTRL ┃ LSHFT ┃       ┃                          ┃       ┃ RSHFT ┃ LCTRL ┃ LALT  ┃ RGUI  ┃       ┃
+    &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                             &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans  
+// ┃       ┃       ┃       ┃       ┃       ┃       ┃                          ┃       ┃       ┃       ┃       ┃       ┃       ┃
 // ┗━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┛
-//         ┃ CtrlZ ┃ CtrlX ┃ CtrlC ┃ CtrlV ┃       ┃                          ┃       ┃       ┃  , <  ┃  . >  ┃  / ?  ┃ 
-         &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none                          &none  &none &kp COMMA &kp DOT &kp FSLH
+//         ┃ CtrlZ ┃ CtrlX ┃ CtrlC ┃ CtrlV ┃       ┃                          ┃ LGUI  ┃       ┃  , <  ┃  . >  ┃  / ?  ┃ 
+         &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none                        &kp LGUI &none &kp COMMA &kp DOT &kp FSLH
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
 //                                     ┃  LALT ┃ SHIFT ┃ FUNC  ┃  ┃ ##### ┃ SPACE ┃ LCTRL ┃
                                        &kp LALT &kp LSHFT &mo 2     &trans &kp SPC &kp LCTRL
