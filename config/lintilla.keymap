@@ -61,7 +61,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LALT>, <&kp LS(LALT)>, <&kp LC(LALT)>;
+            bindings = <&kp LALT>, <&kp LCTL>, <&kp LC(LALT)>;
         };
 
     };
@@ -96,8 +96,8 @@
 //         ┃   Z   ┃   X   ┃   C   ┃   V   ┃   B   ┃                          ┃   N   ┃   M   ┃  , <  ┃  . >  ┃  / ?  ┃
              &kp Z   &kp X   &kp C   &kp V   &kp B                              &kp N   &kp M &kp COMMA &kp DOT &kp FSLH
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
-//                                     ┃ LALT  ┃ SHIFT ┃  CTRL ┃  ┃  NUM  ┃ SPACE ┃  nav  ┃
-                                       &td_alt &kp LSHFT &td_ctl    &mo 1  &kp SPC  &mo 2
+//                                     ┃  NUM  ┃ SHIFT ┃  ALT  ┃  ┃  CTRL ┃ SPACE ┃  NAV  ┃
+                                         &mo 1 &kp LSHFT &td_alt   &td_ctl &kp SPC  &mo 2
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
@@ -115,15 +115,15 @@
 // ┃   `   ┃       ┃       ┃       ┃       ┃       ┃                          ┃   [   ┃   ]   ┃   -   ┃   =   ┃   ;   ┃   \   ┃
    &kp GRAVE &none   &none   &none   &none   &none                         &kp LBKT &kp RBKT &kp MINUS &kp EQUAL &kp SEMI &kp BSLH
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
-// ┃       ┃   1   ┃   2   ┃   3   ┃   4   ┃   5   ┃                          ┃   6   ┃   7   ┃   8   ┃   9   ┃   0   ┃       ┃
-    &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                             &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans  
+// ┃ LSHFT ┃   1   ┃   2   ┃   3   ┃   4   ┃   5   ┃                          ┃   6   ┃   7   ┃   8   ┃   9   ┃   0   ┃ RSHFT ┃
+   &kp LSHFT &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                            &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp RSHFT  
 // ┃       ┃       ┃       ┃       ┃       ┃       ┃                          ┃       ┃       ┃       ┃       ┃       ┃       ┃
 // ┗━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┛
 //         ┃ CtrlZ ┃ CtrlX ┃ CtrlC ┃ CtrlV ┃       ┃                          ┃ LGUI  ┃       ┃  , <  ┃  . >  ┃  / ?  ┃ 
          &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none                        &sk LGUI &none &kp COMMA &kp DOT &kp FSLH
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
-//                                     ┃  LALT ┃ SHIFT ┃ FUNC  ┃  ┃ ##### ┃ SPACE ┃ LCTRL ┃
-                                       &kp LALT &kp LSHFT &mo 2     &trans &kp SPC &kp LCTRL
+//                                     ┃ ##### ┃ SHIFT ┃ ##### ┃  ┃ ##### ┃ SPACE ┃ ##### ┃
+                                        &trans &kp LSHFT &trans    &trans  &kp SPC  &trans
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
@@ -138,18 +138,18 @@
 //         ┃ ##### ┃                                                                                          ┃  DEL  ┃
              &trans                                                                                             &kp DEL
 // ┏━━━━━━━╋━━━━━━━╋━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓                          ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━╋━━━━━━━╋━━━━━━━┓
-// ┃ LCTRL ┃       ┃       ┃       ┃       ┃       ┃                          ┃ Pg Up ┃ Home  ┃  END  ┃       ┃       ┃       ┃
-  &kp LCTL   &none   &none   &none   &none   &none                            &kp PG_UP &kp HOME &kp END &none  &none   &none
+// ┃ LCTRL ┃       ┃       ┃       ┃       ┃       ┃                          ┃ Home  ┃ Pg Dn ┃ Pg Up ┃  END  ┃       ┃       ┃
+  &kp LCTL   &none   &none   &none   &none   &none                         &kp HOME &kp PG_DN &kp PG_UP &kp END &none   &none
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
 // ┃       ┃ LGUI  ┃ LAlt  ┃ LCTRL ┃ LSHFT ┃       ┃                          ┃   ←   ┃   ↓   ┃   ↑   ┃   →   ┃ LCTRL ┃  LGUI ┃
     &none &kp LGUI &kp LALT &kp LCTL &kp LSHFT &none                          &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp LCTL &kp LGUI
 // ┃       ┃       ┃       ┃       ┃       ┃       ┃                          ┃       ┃       ┃       ┃       ┃       ┃       ┃
 // ┗━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┛
-//         ┃ CtrlZ ┃ CtrlX ┃ CtrlC ┃ CtrlV ┃       ┃                          ┃ Pg Dn ┃  MBCK ┃  MFWD ┃       ┃       ┃
-        &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none                        &kp PG_DN &mkp MB4 &mkp MB5 &none  &none
+//         ┃ CtrlZ ┃ CtrlX ┃ CtrlC ┃ CtrlV ┃       ┃                          ┃       ┃  MBCK ┃  MFWD ┃       ┃       ┃
+        &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none                           &none &mkp MB4 &mkp MB5 &none  &none
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
-//                                     ┃ LALT  ┃ SHIFT ┃  CTRL ┃  ┃       ┃       ┃ ##### ┃
-                                      &kp LALT &kp LSHFT &kp LCTL   &none   &trans  &trans
+//                                     ┃ ##### ┃ SHIFT ┃ ##### ┃  ┃ ##### ┃       ┃ ##### ┃
+                                        &trans &kp LSHFT &trans    &trans  &trans  &trans
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
