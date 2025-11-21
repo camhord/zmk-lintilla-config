@@ -64,6 +64,13 @@
             bindings = <&mo 1>, <&mo 3>;
         };
 
+        mo_mo: layer_mod_morph {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&mo 1>, <&mo 3>;
+            mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_RSFT)>;
+        };
+
     };
 
     conditional_layers {
@@ -97,7 +104,7 @@
              &kp Z   &kp X   &kp C   &kp V   &kp B                              &kp N   &kp M &kp COMMA &kp DOT &kp FSLH
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
 //                                     ┃ BKSPC ┃ SHIFT ┃  CTRL ┃  ┃NUM/FUN┃ SPACE ┃  NAV  ┃
-                                       &kp BSPC &kp LSHFT &td_ctl  &td_mo  &kp SPC  &mo 2
+                                       &kp BSPC &kp LSHFT &td_ctl  &mo_mo  &kp SPC  &mo 2
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
