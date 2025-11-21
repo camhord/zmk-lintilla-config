@@ -57,14 +57,13 @@
             bindings = <&kp LCTL>, <&kp LALT>, <&kp LA(LCTL)>;
         };
 
-    };
-
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        function_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+        td_mo: tap_dance_mo {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo 1>, <&mo 3>;
         };
+
     };
 
     keymap {
@@ -89,8 +88,8 @@
 //         ┃   Z   ┃   X   ┃   C   ┃   V   ┃   B   ┃                          ┃   N   ┃   M   ┃  , <  ┃  . >  ┃  / ?  ┃
              &kp Z   &kp X   &kp C   &kp V   &kp B                              &kp N   &kp M &kp COMMA &kp DOT &kp FSLH
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
-//                                     ┃ FUNC  ┃ SHIFT ┃  CTRL ┃  ┃  NUM  ┃ SPACE ┃  NAV  ┃
-                                         &mo 3 &kp LSHFT &td_ctl    &mo 1  &kp SPC  &mo 2
+//                                     ┃ LALT  ┃ SHIFT ┃  CTRL ┃  ┃NUM/FUN┃ SPACE ┃  NAV  ┃
+                                       &kp LALT &kp LSHFT &td_ctl   &td_mo  &kp SPC  &mo 2
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
@@ -112,8 +111,8 @@
     &trans   &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                            &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp RSHFT  
 // ┃       ┃       ┃       ┃       ┃       ┃       ┃                          ┃       ┃       ┃       ┃       ┃       ┃       ┃
 // ┗━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┛
-//         ┃ CtrlZ ┃ CtrlX ┃ CtrlC ┃ CtrlV ┃       ┃                          ┃  FUNC ┃SK LGUI┃  , <  ┃  . >  ┃  / ?  ┃ 
-         &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none                          &mo 2 &sk LGUI &kp COMMA &kp DOT &kp FSLH
+//         ┃ CtrlZ ┃ CtrlX ┃ CtrlC ┃ CtrlV ┃       ┃                          ┃       ┃SK LGUI┃  , <  ┃  . >  ┃  / ?  ┃ 
+         &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none                          &none &sk LGUI &kp COMMA &kp DOT &kp FSLH
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
 //                                     ┃ ##### ┃ SHIFT ┃ ##### ┃  ┃ ##### ┃ SPACE ┃ ##### ┃
                                         &trans &kp LSHFT &trans    &trans  &kp SPC  &trans
