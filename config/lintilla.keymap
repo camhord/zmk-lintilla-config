@@ -113,7 +113,7 @@
 // ┃       ┃       ┃       ┃       ┃       ┃       ┃                          ┃       ┃       ┃       ┃       ┃       ┃       ┃
 // ┗━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┛
 //         ┃ CtrlZ ┃ CtrlX ┃ CtrlC ┃ CtrlV ┃       ┃                          ┃  FUNC ┃SK LGUI┃  , <  ┃  . >  ┃  / ?  ┃ 
-         &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none                          &mo 3 &sk LGUI &kp COMMA &kp DOT &kp FSLH
+         &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none                          &mo 2 &sk LGUI &kp COMMA &kp DOT &kp FSLH
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
 //                                     ┃ ##### ┃ SHIFT ┃ ##### ┃  ┃ ##### ┃ SPACE ┃ ##### ┃
                                         &trans &kp LSHFT &trans    &trans  &kp SPC  &trans
