@@ -54,7 +54,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LCTL>, <&kp LALT>, <&kp LA(LCTL)>;
+            bindings = <&kp LCTL>, <&kp LA(LCTL)>;
         };
 
         td_mo: tap_dance_mo {
