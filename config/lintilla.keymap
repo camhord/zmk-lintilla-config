@@ -57,25 +57,11 @@
             bindings = <&kp LCTL>, <&kp LA(LCTL)>;
         };
 
-        ctl_alt: tap_dance_lctrl {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LCTL>, <&kp LALT>;
-        };
-
         td_mo: tap_dance_mo {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mo 1>, <&mo 3>;
-        };
-
-        td_mo2: tap_dance_mo {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mo 2>, <&mo 3>;
         };
 
     };
@@ -102,8 +88,8 @@
 //         ┃   Z   ┃   X   ┃   C   ┃   V   ┃   B   ┃                          ┃   N   ┃   M   ┃  , <  ┃  . >  ┃  / ?  ┃
              &kp Z   &kp X   &kp C   &kp V   &kp B                              &kp N   &kp M &kp COMMA &kp DOT &kp FSLH
 //         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
-//                                     ┃CTL/ALT┃ SHIFT ┃  CTRL ┃  ┃NUM/FUN┃SPC/NUM┃NAV/FUNC┃
-                                     &kp ctl_alt &kp LSHFT &td_ctl  &td_mo &lt 1 SPC &td_mo2
+//                                     ┃ LALT  ┃ SHIFT ┃  CTRL ┃  ┃NUM/FUN┃ SPACE ┃  NAV  ┃
+                                       &kp LALT &kp LSHFT &td_ctl   &td_mo  &kp SPC  &mo 2
 //                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
